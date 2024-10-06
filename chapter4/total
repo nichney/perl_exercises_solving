@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+
+sub total {
+    my $result;
+    foreach (@_) {
+        $result += $_;
+    }
+    $result;
+}
+
+############################
+#### The first exercise ####
+############################
+#@fred = qw{ 1 3  5 7 9};
+#$fred_total = total(@fred);
+#print "The total of \@fred is $fred_total\n";
+
+#print "Enter some numbers on separate lines: ";
+#$user_total = total(<STDIN>);
+#print "The total of those numbers is $user_total\n";
+############################
+
+
+$thousent_sum = total(0..1000);
+print "The total of 0..1000 is $thousent_sum\n";
