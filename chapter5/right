@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+print "Input some multipiple lines here: ";
+@strings = <STDIN>;
+
+print '1234567890' x 2 . "\n";
+foreach $string  (@strings){
+    $spaces = 21 - length $string; # because there is newline character in $string too
+    print ( " " x $spaces . $string); 
+}

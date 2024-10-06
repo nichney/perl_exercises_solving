@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+
+print "Enter field width here: ";
+$field_width = <STDIN>;
+print "Input some multipiple lines here: ";
+@strings = <STDIN>;
+
+print '-' x $field_width . "\n";
+foreach $string  (@strings){
+    $spaces = $field_width + 1 - length $string; # because there is newline character in $string too
+    print ( " " x $spaces . $string); 
+}
