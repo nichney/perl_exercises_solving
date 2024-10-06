@@ -1,0 +1,7 @@
+#!/usr/bin/perl
+
+print 'Write string here: ';
+$str = <STDIN>;
+print 'Write number here: ';
+chomp($number = <STDIN>);
+print $str x $number;

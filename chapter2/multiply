@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+
+chomp($first_number = <STDIN>);
+chomp($second_number = <STDIN>);
+
+print $first_number * $second_number;
