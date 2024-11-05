@@ -1,0 +1,5 @@
+#!/usr/bin/perl
+
+while(<>){
+    if(/(.*[A-Z]+.*[a-z]+.*)|(.*[a-z]+.*[A-Z]+.*)/) {print};
+}
