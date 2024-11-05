@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+%family_names = (
+    fred => 'flinstone',
+    barney => 'rubble',
+    wilma => 'flinstone',
+);
+
+print "Enter a name: ";
+chomp($name=<STDIN>);
+print "$name\'s family name is $family_names{$name}\n";

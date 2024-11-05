@@ -1,0 +1,11 @@
+#!/usr/bin/perl
+
+my %names;
+print "Enter names: ";
+foreach $name (<STDIN>){
+    chomp $name;
+    $names{$name} += 1;
+}
+foreach $k (keys %names){
+    print "$k seen $names{$k} times\n";
+}
