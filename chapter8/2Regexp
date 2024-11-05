@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+while(<>){
+    chomp;
+    if (/a\b/){
+        print "MAtched: | $`<$&>$'|\n";
+    } else {
+        print "No match: |$_|\n";
+    }
+}

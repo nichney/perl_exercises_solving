@@ -1,0 +1,9 @@
+#!/usr/bin/perl
+while(<>){
+    chomp;
+    if (/a\b(.{,5})/){
+        print "MAtched: | \$1 contains '$1'|\n";
+    } else {
+        print "No match: |$_|\n";
+    }
+}
