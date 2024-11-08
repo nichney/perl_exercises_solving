@@ -1,0 +1,6 @@
+#!/usr/bin/perl
+die "Error: no input\n" unless @ARGV;
+foreach(@ARGV){
+    print "$_\n" if -r -w -o;
+}
+

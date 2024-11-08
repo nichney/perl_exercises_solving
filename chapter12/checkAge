@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+die "Error: no input\n" unless @ARGV;
+$max = -M @ARGV[1];
+$name = @ARGV[1];
+foreach(@ARGV){
+    if( -M > $max){
+        $max = -M $_;
+        $name = $_;
+    }
+}
+print "Oldest file is '$name' for ".int($max)." days\n";
+

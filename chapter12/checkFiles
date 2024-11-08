@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+foreach(@ARGV){
+    &reportAttr;
+}
+sub reportAttr {
+    print "File '$_' is: ";
+    print "readable " if -r;
+    print "writable " if -w;
+    print "executable " if -x;
+    print "not exists" unless -e;
+    print "\n";
+}
