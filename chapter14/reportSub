@@ -1,0 +1,4 @@
+#!/usr/bin/perl
+for ($_ = index(@ARGV[0], @ARGV[1]); $_ != -1; $_ = index(@ARGV[0], @ARGV[1], $_+1)){
+    print "$_\n";
+}
